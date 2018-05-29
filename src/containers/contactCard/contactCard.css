@@ -1,0 +1,153 @@
+.App-contact-card
+{
+    background: white;
+    z-index: 9;
+    height: 100%;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.App-contact-card.App-contact-card-slide
+{
+    transform: translateX(60px) scale(0.96);
+    transform-origin: center;
+}
+
+.App-contact-headline
+{
+    height: 50px;
+    background: rgba(100, 182, 252, 0.6);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.App-contact-headline-title
+{
+    color: white;
+    margin: 0 auto;
+}
+
+.App-contact-hamburger
+{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    padding-left: 15px;
+}
+
+.App-contact-hamburger span
+{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.App-contact-hamburger span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+.App-contact-hamburger span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+.App-contact-list-item
+{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.App-contact-list-item img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.App-contact-list-item-image
+{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App-contact-list-item-chat
+{
+    white-space: nowrap;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.App-contact-list-item-chat-message
+{
+    color: grey;
+}
+
+.App-contact-list-item-chat-time
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.App-contact-list-item-chat-time p
+{
+    color: rgba(0, 0, 0, 0.1);
+    padding-left: 5px;
+}
+
+/* clock icon */
+.App-contact-list-item-chat-time-clock {
+    border-radius: 100%;
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.App-contact-list-item-chat-time-clock:after,
+.App-contact-list-item-chat-time-clock:before {
+    border-left: none;
+    width: 0;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    content: '';
+    position: absolute;
+}
+.App-contact-list-item-chat-time-clock:after {
+    height: 4.5px;
+    left: 6px;
+    top: 1.5px;
+}
+.App-contact-list-item-chat-time-clock:before {
+    height: 2px;
+    left: 7.5px;
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
